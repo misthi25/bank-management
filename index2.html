@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Application Form</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/190/190411.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-banner">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Bank Icon">
+    <h1>Bank Application Form</h1>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Form Icon">
+      <h2>Manage Bank Accounts</h2>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Account Holder Name</label>
+        <input type="text" id="name">
+      </div>
+      <div class="form-group">
+        <label>Initial Deposit</label>
+        <input type="number" id="balance">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button onclick="createAccount()">Create Account</button>
+    </div>
+
+    <div class="form-group">
+      <label>Select Account</label>
+      <select id="accountSelect" onchange="loadSelectedAccount()">
+        <option value="">-- Choose an account --</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Deposit Amount</label>
+      <input type="number" id="depositAmount">
+      <button onclick="deposit()">Deposit</button>
+    </div>
+
+    <div class="form-group">
+      <label>Withdraw Amount</label>
+      <input type="number" id="withdrawAmount">
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <div class="form-group">
+      <h2>Account Info</h2>
+      <p id="accountInfo">No account selected.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

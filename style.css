@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #dbeeff, #f2f9ff);
+}
+
+.top-banner {
+  background-color: #002d5c;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-banner img {
+  width: 30px;
+  height: 30px;
+}
+
+.top-banner h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  background-color: white;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #ccdff4;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #ccdff4;
+  padding-bottom: 10px;
+}
+
+.header img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header h2 {
+  color: #0059b3;
+  margin: 0;
+  font-size: 22px;
+}
+
+.sub-header {
+  background: linear-gradient(to right, #007acc, #66b2ff);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #b3daff;
+}
+
+h2 {
+  color: #0059b3;
+  border-bottom: 1px solid #ccdff4;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #b3cde3;
+  border-radius: 4px;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+.account-types {
+  margin-top: 10px;
+}
+
+.account-types label {
+  margin-right: 20px;
+}
+
+.balance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.balance-table th, .balance-table td {
+  border: 1px solid #b3cde3;
+  padding: 8px;
+  text-align: center;
+  background-color: #f9fcff;
+}
+
+.signature-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature-section div {
+  border-top: 1px solid #000;
+  width: 30%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.declaration {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .signature-section div {
+    width: 100%;
+  }
+}
